@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: zoo-backend-config
+data:
+  GITHUB_TOKEN: 'example-token'
+  GITHUB_REPO_OWNER: 'example-owner'
+  GITHUB_REPO: 'example-repo'
+  GITHUB_DEV_TRACKED_BRANCH: 'staging'
+  GITHUB_DEFAULT_TRACKED_BRANCH: 'production'
+  GITHUB_FETCHED_COMMITS_PER_PAGE: '100'
+  MONGODB_HOST: 'mongodb-service'
+  MONGODB_PORT: '27017'
+  MONGODB_DATABASE_NAME: ''
+  MONGODB_URI: ''
+  CA_CERT: ''
+  SQL_HOST: 'mysql-service'
+  SQL_DB_NAME: ''
+  SQL_DIALECT: 'mysql'
+  PORT: '8000'
+  DEPLOYMENT: 'DEV'
+  HEALTH_CHECK_LOAD_INTERVAL: '5'
